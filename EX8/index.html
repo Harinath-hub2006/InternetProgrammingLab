@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f2f2f2; 
+            margin: 0; 
+            padding: 0; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .hero-header {
+            background-color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .hero-header h1 {
+            margin: 0;
+            color: #333333;
+            font-size: 26px;
+        }
+        .hero-header h1 span {
+            color: #2d6cdf;
+        }
+        .hero-header p {
+            color: #666666;
+            margin: 8px 0 0 0;
+            font-size: 15px;
+        }
+
+        .form-container {
+            width: 420px; 
+            margin: 40px auto; 
+            background: #ffffff;
+            padding: 30px; 
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-top: 4px solid #2d6cdf;
+            flex: 1;
+        }
+        
+        h2 { 
+            text-align: center; 
+            color: #2d6cdf; 
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        label { 
+            display: block; 
+            margin-top: 12px; 
+            margin-bottom: 4px;
+            font-weight: bold; 
+            color: #444444; 
+            font-size: 14px;
+        }
+
+        input[type="text"], input[type="password"],
+        input[type="email"], input[type="tel"], select {
+            width: 100%; 
+            padding: 10px; 
+            box-sizing: border-box;
+            border: 1px solid #cccccc; 
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            font-size: 14px;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #2d6cdf;
+            background-color: #ffffff;
+        }
+
+        input:invalid:focus, select:invalid:focus {
+            border-color: #e74c3c;
+        }
+
+        input[type="submit"] {
+            width: 100%; 
+            margin-top: 24px; 
+            padding: 12px;
+            background-color: #2d6cdf; 
+            color: white; 
+            border: none;
+            border-radius: 4px; 
+            font-size: 16px; 
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        input[type="submit"]:hover { 
+            background-color: #1a52b8; 
+        }
+        
+        .error-msg {
+            color: #e74c3c;
+            font-size: 12px;
+            margin-top: 4px;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777777;
+            font-size: 14px;
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-header">
+        <h1>Online<span>Registration</span></h1>
+    </div>
+
+    <div class="form-container">
+        <h2>Create Your Profile</h2>
+        <form id="registrationForm" action="register.jsp" method="post" onsubmit="return validateForm()">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" 
+                   pattern="(?=.*\d)(?=.*[a-z]).{8,}" 
+                   title="Must contain at least one number, one lowercase letter, and at least 8 or more characters" 
+                   required>
+            <div id="passwordError" class="error-msg">Password must be at least 8 chars long with letters & numbers.</div>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="ccnumber">Credit Card Number:</label>
+            <input type="text" id="ccnumber" name="ccnumber"
+                   pattern="\d{13,19}" maxlength="19"
+                   title="Enter a valid credit card number (13 to 19 digits only)" required>
+                   
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9]{10}" title="Enter a 10 digit phone number" required>
+                   
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            let isValid = true;
+            
+            // Password Extra JS Validation check
+            const password = document.getElementById("password").value;
+            const passRegex = /^(?=.*\d)(?=.*[a-z]).{8,}$/;
+            const passwordError = document.getElementById("passwordError");
+            
+            if (!passRegex.test(password)) {
+                passwordError.style.display = "block";
+                isValid = false;
+            } else {
+                passwordError.style.display = "none";
+            }
+
+            // Dropdown Validation Check
+            const product = document.getElementById("product").value;
+            const productError = document.getElementById("productError");
+            
+            if (product === "") {
+                productError.style.display = "block";
+                isValid = false;
+            } else {
+                productError.style.display = "none";
+            }
+
+            return isValid;
+        }
+    </script>
+
+
+    <footer>&copy; 2026 User Registration Portal. All rights reserved.</footer>
+
+</body>
+</html>

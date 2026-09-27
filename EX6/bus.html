@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bus Reservation System</title>
+<style>
+body {
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.navbar {
+  background-color: #1a4fb5;
+  padding: 14px 40px;
+  overflow: hidden;
+}
+
+.navbar h2 {
+  color: white;
+  float: left;
+  margin: 0;
+}
+
+.navbar h2 span { color: #ffcc00; }
+
+.navbar a {
+  float: right;
+  color: white;
+  text-decoration: none;
+  margin-top: 4px;
+  font-size: 0.95rem;
+}
+
+h1 {
+  color: tomato;
+  text-align: center;
+}
+
+h3 {
+  color: #1a4fb5;
+  text-align: center;
+}
+
+.form-wrap {
+  max-width: 500px;
+  margin: 20px auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 24px 32px;
+}
+
+.form-wrap table {
+  width: 100%;
+}
+
+.form-wrap td {
+  padding: 8px 6px;
+}
+
+.form-wrap input[type="text"],
+.form-wrap input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #ff6a3d;
+  color: white;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.table-wrap {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-wrap th {
+  background-color: #1a4fb5;
+  color: white;
+  padding: 10px;
+}
+
+.table-wrap td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table-wrap tr:nth-child(even) { background-color: #f7f7f7; }
+
+.guidelines {
+  max-width: 500px;
+  margin: 10px auto 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px 28px;
+  color: #555;
+  line-height: 1.9;
+}
+
+footer {
+  background-color: #1c2b39;
+  color: #aaa;
+  text-align: center;
+  padding: 18px;
+  margin-top: 30px;
+  font-size: 0.85rem;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<h2>&#128652; Bus<span>Go</span></h2>
+<a href="index.html">&#8592; Back to Home</a>
+</div>
+
+<br>
+<center>
+<img src="busTicket.jpg" width="80" height="80" alt="Logo">
+</center>
+<h1>Bus Reservation System</h1>
+<p style="text-align:center; color:#555;">Fill in your travel details below to reserve your bus ticket.</p>
+
+<div class="form-wrap">
+<form action="BookTicketServlet" method="POST">
+<input type="hidden" name="category" value="Bus">
+<table>
+<tr>
+<td><label>Name:</label></td>
+<td><input type="text" name="name" required></td>
+</tr>
+<tr>
+<td><label>Age:</label></td>
+<td><input type="number" name="age" required></td>
+</tr>
+<tr>
+<td><label>Source:</label></td>
+<td><input type="text" name="source" required></td>
+</tr>
+<tr>
+<td><label>Destination:</label></td>
+<td><input type="text" name="destination" required></td>
+</tr>
+<tr>
+<td><label>No. of Seats:</label></td>
+<td><input type="number" name="seats" min="1" required></td>
+</tr>
+</table>
+<br>
+<center><input type="submit" value="Book Bus Ticket"></center>
+</form>
+</div>
+
+<h3>Available Buses</h3>
+<div class="table-wrap">
+<table>
+<tr>
+<th>Bus No</th>
+<th>Route</th>
+<th>Timing</th>
+</tr>
+<tr>
+<td>A1</td>
+<td>Madurai - Chennai</td>
+<td>9 : 10 am</td>
+</tr>
+<tr>
+<td>B3</td>
+<td>Trichy - Madurai</td>
+<td>7 : 50 pm</td>
+</tr>
+</table>
+</div>
+
+<h3>Booking Guidelines</h3>
+<div class="guidelines">
+<ul>
+<li>Children below 5 years of age travel free of cost</li>
+<li>Carry a valid ID proof while boarding the bus</li>
+<li>Arrive at least 15 minutes before departure</li>
+<li>Luggage is limited to one bag per passenger</li>
+</ul>
+</div>
+
+<footer>&copy; 2027 BusGo Reservation System</footer>
+
+</body>
+</html>

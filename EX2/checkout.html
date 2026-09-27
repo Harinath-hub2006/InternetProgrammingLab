@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Shopping System - Checkout</title>
+</head>
+<body style="background:Snow; font-family:Georgia, serif;">
+
+<center>
+<img src="logo.jpg" width="90" height="90" alt="Logo">
+<h1 style="color:tomato;">Checkout</h1>
+<a href="index.html" style="color:tomato;">Home</a> |
+<a href="register.html" style="color:tomato;">Register</a> |
+<a href="login.html" style="color:tomato;">Login</a> |
+<a href="catalog.html" style="color:tomato;">Product Catalog</a> |
+<strong><a href="checkout.html" style="color:tomato;">Checkout</a></strong>
+</center>
+<hr>
+
+<center><h2 style="color:tomato;">Shipping &amp; Payment Details</h2></center>
+
+<table style="background:Azure;" border="1" align="center" cellpadding="8">
+<form>
+
+<tr><td>
+<fieldset>
+<legend>Contact &amp; Delivery</legend>
+<table>
+<tr><td><label>Full Name:</label></td><td><input type="text"></td></tr>
+<tr><td><label>Email:</label></td><td><input type="email"></td></tr>
+<tr><td><label>Phone Number:</label></td><td><input type="tel"></td></tr>
+<tr><td><label>Delivery Address:</label></td><td><textarea rows="3" cols="30"></textarea></td></tr>
+<tr><td><label>Delivery Date:</label></td><td><input type="date"></td></tr>
+<tr><td><label>Preferred Delivery Time:</label></td><td><input type="time"></td></tr>
+</table>
+</fieldset>
+</td></tr>
+
+<tr><td>
+<fieldset>
+<legend>Order Details</legend>
+<table>
+<tr><td><label>Quantity:</label></td><td><input type="number" min="1" value="1"></td></tr>
+<tr><td><label>Preferred Colour:</label></td><td><input type="color"></td></tr>
+<tr><td><label>Discount Coupon (0&#37; - 50&#37;):</label></td><td><input type="range" min="0" max="50" step="5"></td></tr>
+<tr><td><label>Upload Gift Note / Design:</label></td><td><input type="file"></td></tr>
+</table>
+</fieldset>
+</td></tr>
+
+<tr><td>
+<fieldset>
+<legend>Payment</legend>
+<table>
+<tr><td><label>Country:</label></td><td>
+<select>
+<option>India</option>
+<option>United States</option>
+<option>United Kingdom</option>
+<option>Australia</option>
+</select>
+</td></tr>
+<tr><td><label>Payment Method:</label></td><td>
+<input type="radio"> Card &#128179;
+<input type="radio"> UPI &#128241;
+<input type="radio"> COD &#128176;
+</td></tr>
+<tr><td><label>Gift Wrap:</label></td><td><input type="checkbox"> Yes, please &#127873;</td></tr>
+<tr><td><label>Agree to Terms &amp; Conditions:</label></td><td><input type="checkbox"> I agree &#9989;</td></tr>
+</table>
+</fieldset>
+</td></tr>
+
+<tr>
+<td align="center">
+<input type="submit" style="background: tomato; color: white;">
+</td>
+</tr>
+
+</form>
+</table>
+
+
+<br><hr>
+<center><p><small>&copy; 2027 Online Shopping System</small></p></center>
+
+</body>
+</html>

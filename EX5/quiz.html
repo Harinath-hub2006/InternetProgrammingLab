@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Examination System</title>
+<style>
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+margin: 40px;
+}
+
+.container {
+width: 700px;
+margin: auto;
+background: white;
+padding: 25px;
+border-radius: 8px;
+box-shadow: 0 0 10px #ccc;
+}
+
+h1 {
+text-align: center;
+color: #333;
+}
+
+.question {
+margin-bottom: 25px;
+}
+
+input[type="submit"] {
+background-color: #007bff;
+color: white;
+padding: 12px 25px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #0056b3;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Online Examination</h1>
+<form action="ExamServlet" method="post">
+
+<div class="question">
+<p><strong>1. What is the full form of HTML?</strong></p>
+<input type="radio" name="q1" value="Hyper Text Markup Language">Hyper Text Markup Language<br>
+<input type="radio" name="q1" value="Hyperion Text Markup Language">Hyperion Text Markup Language<br>
+<input type="radio" name="q1" value="Hipster Text Markup Language">Hipster Text Markup Language<br>
+<input type="radio" name="q1" value="Holy Text Markup Language">Holy Text Markup Language
+</div>
+
+<div class="question">
+<p><strong>2. Which language is used for styling web pages?</strong></p>
+<input type="radio" name="q2" value="Kotlin"> Kotlin<br>
+<input type="radio" name="q2" value="HTML"> HTML<br>
+<input type="radio" name="q2" value="SQL"> SQL<br>
+<input type="radio" name="q2" value="CSS"> CSS
+</div>
+
+<div class="question">
+<p><strong>3. Which HTML tag is used to create a hyperlink?</strong></p>
+<input type="radio" name="q3" value="a">&lt;a&gt;<br>
+<input type="radio" name="q3" value="p">&lt;p&gt;<br>
+<input type="radio" name="q3" value="h1">&lt;h1&gt;<br>
+<input type="radio" name="q3" value="table">&lt;table&gt;
+</div>
+
+<div class="question">
+<p><strong>4. Which character is used to represent the closing tag in HTML?</strong></p>
+<input type="text" name="q4" value=""><br>
+</div>
+
+<div class="question">
+<p><strong>5. What is used to read a HTML page and render it?</strong></p>
+<input type="text" name="q5" value=""><br>
+</div>
+
+<input type="submit" value="Submit Examination">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cricket Tournament Results</title>
+<style>
+
+body {
+font-family: Arial, sans-serif;
+background-color: lightwhite;
+margin: 0;
+padding: 40px;
+}
+
+h1 {
+text-align: center;
+color: royalblue;
+}
+
+table {
+width: 80%;
+margin: 30px auto;
+border-collapse: collapse;
+background-color: white;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+border: 1px solid #ccc;
+padding: 15px;
+text-align: center;
+}
+
+th {
+background-color: darkgreen;
+color: white;
+}
+
+tr:nth-child(even) {
+background-color: lightgrey;
+}
+
+tr:hover{
+background-color: #d7f0dc;
+}
+
+.winner {
+background-color: lightgreen;
+color: red;
+font-weight: bold;
+}
+
+.winner .score {
+font-size: 28px;
+color: red;
+font-weight: bold;
+}
+
+.runner-up {
+color: #555;
+font-weight: bold;
+}
+
+.result {
+font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+<h1>Cricket Tournament Results</h1>
+<table>
+<tr>
+<th>Position</th>
+<th>Team</th>
+<th>Matches</th>
+<th>Wins</th>
+<th>Losses</th>
+<th>Score</th>
+<th>Result</th>
+</tr>
+
+
+<tr class="winner">
+<td>1</td>
+<td>India</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td class="score">245/6</td>
+<td class="result">Winner 🏆</td>
+</tr>
+
+<tr class="runner-up">
+<td>2</td>
+<td>Australia</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>221/8</td>
+<td>Runner-up</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>England</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>205/9</td>
+<td>Third Place</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>South Africa</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>198/7</td>
+<td>Fourth Place</td>
+</tr>
+
+</table>
+</body>
+</html>

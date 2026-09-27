@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Place Order</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .form-container {
+    background: #ffffff;
+    max-width: 420px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  h2 {
+    color: #2d6cdf;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+  }
+  input[type="text"], 
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fafafa;
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color: #2d6cdf;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  input[type="submit"]:hover {
+    background-color: #1a52b8;
+  }
+  .view-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #2d6cdf;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .view-link:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Place New Order</h2>
+  <form action="insert_orders.php" method="POST">
+    
+    <label for="customer_name">Customer Name:</label>
+    <input type="text" id="customer_name" name="customer_name" required>
+
+    <label for="product_name">Product Name:</label>
+    <input type="text" id="product_name" name="product_name" required>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+
+    <label for="price">Price (per unit):</label>
+    <input type="number" id="price" name="price" step="0.01" min="0" required>
+
+    <input type="submit" value="Place Order">
+  </form>
+  
+  <a href="view_orders.php" class="view-link">View All Orders &rarr;</a>
+</div>
+
+</body>
+</html>

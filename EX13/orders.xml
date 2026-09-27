@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+  <order>
+    <id>101</id>
+    <customer>John Doe</customer>
+    <product>Wireless Mouse</product>
+    <quantity>2</quantity>
+    <price>25.99</price>
+  </order>
+  <order>
+    <id>102</id>
+    <customer>Jane Smith</customer>
+    <product>Bluetooth Keyboard</product>
+    <quantity>1</quantity>
+    <price>45.50</price>
+  </order>
+  <order>
+    <id>103</id>
+    <customer>Arun Kumar</customer>
+    <product>USB-C Hub</product>
+    <quantity>3</quantity>
+    <price>18.75</price>
+  </order>
+  <order>
+    <id>104</id>
+    <customer>Priya Sharma</customer>
+    <product>Laptop Stand</product>
+    <quantity>2</quantity>
+    <price>29.99</price>
+  </order>
+  <order>
+    <id>105</id>
+    <customer>Michael Brown</customer>
+    <product>Gaming Headset</product>
+    <quantity>1</quantity>
+    <price>59.99</price>
+  </order>
+  <order>
+    <id>106</id>
+    <customer>Emily Davis</customer>
+    <product>External SSD</product>
+    <quantity>1</quantity>
+    <price>89.99</price>
+  </order>
+  <order>
+    <id>107</id>
+    <customer>Rahul Verma</customer>
+    <product>HDMI Cable</product>
+    <quantity>4</quantity>
+    <price>12.50</price>
+  </order>
+  <order>
+    <id>108</id>
+    <customer>Sarah Wilson</customer>
+    <product>Mechanical Keyboard</product>
+    <quantity>1</quantity>
+    <price>75.00</price>
+  </order>
+  <order>
+    <id>109</id>
+    <customer>David Miller</customer>
+    <product>Mouse Pad</product>
+    <quantity>5</quantity>
+    <price>9.99</price>
+  </order>
+  <order>
+    <id>110</id>
+    <customer>Ananya Patel</customer>
+    <product>Web Camera</product>
+    <quantity>2</quantity>
+    <price>39.99</price>
+  </order>
+</orders>

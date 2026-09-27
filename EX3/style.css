@@ -1,0 +1,37 @@
+body {
+  background-color: Snow;
+  font-family: Georgia, serif;
+}
+
+.brand-title {
+  color: tomato;
+}
+
+nav a {
+  color: tomato;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.section-heading {
+  color: tomato;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+/* CSS Box Model demonstration:
+   content (300px) + padding (15px) + border (3px) + margin (20px)
+   together determine the total space this box takes up on the page */
+.intro-box {
+  width: 300px;
+  padding: 15px;
+  border: 3px solid tomato;
+  margin: 20px auto;
+  background-color: Azure;
+  text-align: center;
+}

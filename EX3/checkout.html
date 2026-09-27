@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Shopping System - Checkout</title>
+<style>
+body {
+  background-color: Snow;
+  font-family: Georgia, serif;
+}
+
+h1, h2 {
+  color: tomato;
+}
+
+nav a {
+  color: tomato;
+  text-decoration: none;
+}
+
+table.checkout-table {
+  background-color: Azure;
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+fieldset {
+  border: 1px solid tomato;
+  padding: 10px;
+}
+
+legend {
+  color: tomato;
+}
+
+input[type="submit"] {
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+}
+</style>
+</head>
+<body>
+
+<center>
+<img src="logo.jpg" width="90" height="90" alt="Logo">
+<h1>Checkout</h1>
+<nav>
+<a href="index.html">Home</a> |
+<a href="register.html">Register</a> |
+<a href="login.html">Login</a> |
+<a href="catalog.html">Product Catalog</a> |
+<strong><a href="checkout.html">Checkout</a></strong>
+</nav>
+</center>
+<hr>
+
+<center><h2>Shipping &amp; Payment Details</h2></center>
+
+<table class="checkout-table" border="1" align="center" cellpadding="8">
+<form>
+
+<tr><td>
+<fieldset>
+<legend>Contact &amp; Delivery</legend>
+<table>
+<tr><td><label>Full Name:</label></td><td><input type="text"></td></tr>
+<tr><td><label>Email:</label></td><td><input type="email"></td></tr>
+<tr><td><label>Phone Number:</label></td><td><input type="tel"></td></tr>
+<tr><td><label>Delivery Address:</label></td><td><textarea rows="3" cols="30"></textarea></td></tr>
+<tr><td><label>Delivery Date:</label></td><td><input type="date"></td></tr>
+<tr><td><label>Preferred Delivery Time:</label></td><td><input type="time"></td></tr>
+</table>
+</fieldset>
+</td></tr>
+
+<tr><td>
+<fieldset>
+<legend>Order Details</legend>
+<table>
+<tr><td><label>Quantity:</label></td><td><input type="number" min="1" value="1"></td></tr>
+<tr><td><label>Preferred Colour:</label></td><td><input type="color"></td></tr>
+<tr><td><label>Discount Coupon (0&#37; - 50&#37;):</label></td><td><input type="range" min="0" max="50" step="5"></td></tr>
+<tr><td><label>Upload Gift Note / Design:</label></td><td><input type="file"></td></tr>
+</table>
+</fieldset>
+</td></tr>
+
+<tr><td>
+<fieldset>
+<legend>Payment</legend>
+<table>
+<tr><td><label>Country:</label></td><td>
+<select>
+<option>India</option>
+<option>United States</option>
+<option>United Kingdom</option>
+<option>Australia</option>
+</select>
+</td></tr>
+<tr><td><label>Payment Method:</label></td><td>
+<input type="radio"> Card &#128179;
+<input type="radio"> UPI &#128241;
+<input type="radio"> COD &#128176;
+</td></tr>
+<tr><td><label>Gift Wrap:</label></td><td><input type="checkbox"> Yes, please &#127873;</td></tr>
+<tr><td><label>Agree to Terms &amp; Conditions:</label></td><td><input type="checkbox"> I agree &#9989;</td></tr>
+</table>
+</fieldset>
+</td></tr>
+
+<tr>
+<td align="center">
+<input type="submit">
+</td>
+</tr>
+
+</form>
+</table>
+
+
+<br><hr>
+<center><p><small>&copy; 2027 Online Shopping System</small></p></center>
+
+</body>
+</html>

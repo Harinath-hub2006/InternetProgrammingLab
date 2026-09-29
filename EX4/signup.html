@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>Sign Up - HireHive</title<>link rel="stylesheet" href="portal.css"></head> 
+<body> 
+<div class="navbar"> 
+<a href="index.html" class="logo">Hire<span>Hive</span></a> 
+<a href="index.html">Home</a> 
+<a href="login.html">Login</a> 
+<a href="signup.html" class="active">Sign Up Free</a> 
+</div> <br><center> 
+<h2 style="color:#1a4fb5;">Create your candidate profile</h2> 
+<p style="color:#777;">All fields marked * are required</p></center><br> 
+<table align="center" width="700" border="0" cellpadding="10"><tr> 
+<td width="220" valign="top" style="background-color:#1a4fb5; color:white; padding:30px; border
+radius:6px;"><h3>Your next role starts here.</h3><br> 
+<ul style="list-style:none; padding:0; color:#c8d9f5; line-height:2;"> 
+<li>&#10003; Get matched with top recruiters</li> 
+<li>&#10003; Apply to jobs in one click</li> 
+<li>&#10003; Track all applications</li> 
+<li>&#10003; Free, always</li></ul></td> 
+<td valign="top" style="background:white; padding:30px; border:1px solid #ddd; border-radius:6px;"> 
+<form id="signupForm" novalidate><fieldset><legend>Basic Details</legend> 
+<label for="fullName">Full Name *</label> 
+<input type="text" id="fullName" placeholder="e.g. Ananya Raghavan"> 
+<div class="error" id="fullNameError"></div><br><label for="email">Email Address *</label> 
+<input type="text" id="email" placeholder="you@example.com"> 
+<div class="error" id="emailError"></div><br> 
+<label for="phone">Phone Number *</label> 
+<input type="text" id="phone" placeholder="98765 43210"> 
+<div class="error" id="phoneError"></div><br> 
+<label for="password">Create Password *</label> 
+<input type="password" id="password" placeholder="Min. 8 characters with a number"> 
+<div class="error" id="passwordError"></div></fieldset> 
+<fieldset><legend>Professional Details</legend> 
+<label for="jobTitle">Desired Job Title *</label> 
+<input type="text" id="jobTitle" placeholder="e.g. UX Designer"> 
+<div class="error" id="jobTitleError"></div><br> 
+<label for="experience">Years of Experience *</label> 
+<input type="number" id="experience" placeholder="e.g. 3" min="0" max="50"> 
+<div class="error" id="experienceError"></div><br> 
+<label for="linkedin">LinkedIn Profile URL *</label> 
+<input type="text" id="linkedin" placeholder="https://linkedin.com/in/your-name"> 
+<div class="error" id="linkedinError"></div></fieldset> 
+<fieldset><legend>Resume</legend> 
+<label for="resume">Upload Resume (PDF or DOC/DOCX only) *</label> 
+<input type="file" id="resume"> 
+<small style="color:#999; display:block; margin-top:4px;">Max file size 5 MB.</small> 
+<div class="error" id="resumeError"></div></fieldset> 
+<input type="submit" class="btn" value="Create My Profile" style="width:100%;"> 
+<div id="successMsg" style="display:none; color:green; font-weight:bold; text-align:center; margin
+top:12px;"></div></form><br> 
+<p align="center">Already have an account? <a href="login.html" style="color:#2d6cdf; font
+weight:bold;">Log in</a></p></td> 
+</tr></table> <br><footer>&copy; 2027 HireHive. All rights reserved.</footer> 
+<script src="signup.js"></script> 
+</body> 
+</html>

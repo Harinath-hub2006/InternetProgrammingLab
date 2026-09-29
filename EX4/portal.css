@@ -1,0 +1,103 @@
+body { 
+font-family: Arial, sans-serif; 
+background-color: #f2f2f2; 
+color: #333; 
+} 
+.navbar { 
+background-color: #2d6cdf; 
+padding: 14px 40px; 
+overflow: hidden; 
+} 
+.navbar a { 
+  color: white; 
+  text-decoration: none; 
+  font-size: 1rem; 
+  margin-left: 20px; 
+} 
+ 
+.navbar .logo { 
+  float: left; 
+  font-size: 1.4rem; 
+  font-weight: bold; 
+} 
+ 
+.navbar .logo span { color: #ffcc00; } 
+ 
+.navbar .active { 
+  background-color: #ff6a3d; 
+  padding: 7px 14px; 
+  border-radius: 4px; 
+} 
+ 
+.hero { 
+  background-color: #1a4fb5; 
+  color: white; 
+  text-align: center; 
+  padding: 50px 20px; 
+} 
+ 
+.hero p { color: #ccdcff; margin: 10px 0 24px; } 
+ 
+.btn { 
+  background-color: #ff6a3d; 
+  color: white; 
+  border: none; 
+  padding: 10px 22px; 
+  border-radius: 4px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+} 
+ 
+.card { 
+  background: white; 
+  border: 1px solid #ddd; 
+  border-radius: 6px; 
+  padding: 18px; 
+  text-align: center; 
+} 
+ 
+fieldset { 
+  border: 1px solid #ddd; 
+  border-radius: 6px; 
+  padding: 16px; 
+  margin-bottom: 16px; 
+  background: white; 
+} 
+ 
+legend { color: #1a4fb5; font-weight: bold; padding: 0 6px; } 
+ 
+ 
+ 
+label { 
+  display: block; 
+  font-size: 0.85rem; 
+  font-weight: bold; 
+  margin: 10px 0 4px; 
+  color: #444; 
+}  
+ 
+input, select, textarea { 
+  width: 100%; 
+  padding: 9px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-family: Arial, sans-serif; 
+  font-size: 14px; 
+  box-sizing: border-box; 
+} 
+ 
+.error { 
+  color: red; 
+  font-size: 13px; 
+  font-weight: bold; 
+  margin-top: 4px; 
+} 
+ 
+footer { 
+  background-color: #1c2b39; 
+  color: #aaa; 
+  text-align: center; 
+  padding: 20px; 
+  margin-top: 40px; 
+  font-size: 0.85rem; 
+}
